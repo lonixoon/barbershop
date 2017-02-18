@@ -24,7 +24,7 @@
     </header>
     <main class="conteainer">
         <section class="title">
-            <div class="title-product">
+            <div class="title-items">
                 <h1>Средства для ухода</h1>
             </div>
             <div class="bread-crumbs">
@@ -41,14 +41,19 @@
                 <div>
                     <input type="checkbox" name="b-o-c" checked>
                     <label for="b-o-c">Baxter of California</label>
+                    
                     <input type="checkbox" name="m-n">
                     <label for="m-n">Mr Natty</label>
+                    
                     <input type="checkbox" name="sua" checked>
                     <label for="sua">Suavecito</label>
+                    
                     <input type="checkbox" name="m+g">
                     <label for="m+g">Malin+Goetz</label>
+                    
                     <input type="checkbox" name="mur">
                     <label for="mur">Murray's</label>
+                    
                     <input type="checkbox" name="a-c" checked>
                     <label for="a-c">American Crew</label>
                 </div>
@@ -56,35 +61,38 @@
             <fieldset>
                 <legend>Группы товаров</legend>
                 <div>
-                    <input type="radio" name="product-groups">
-                    <label for="product-groups">Бритвенные принадлежности</label>
-                    <input type="radio" name="product-groups" checked>
-                    <label for="product-groups">Средства для ухода</label>
-                    <input type="radio" name="product-groups">
-                    <label for="product-groups">Аксесуары</label>
+                    <input type="radio" name="items-groups">
+                    <label for="items-groups">Бритвенные принадлежности</label>
+                    
+                    <input type="radio" name="items-groups" checked>
+                    <label for="items-groups">Средства для ухода</label>
+                    
+                    <input type="radio" name="items-groups">
+                    <label for="items-groups">Аксесуары</label>
                 </div>
             </fieldset>
-            <section class="item">
-                <div class="item-view">
-                    <div class="item-view-buy">
-                        <img src="#travel-kit-b-o-c">
-                        <p>Набор для путешествий<br>
-                        «Baxter of California»</p>
-                        <div class="product-bue">
-                            <div class="price">2 900 руб.</div>
-                            <a class="bue" href="#bue">Купить</a>
-                        </div>
+            <button type="button">Показать</button>
+            <section class="items">
+                <div class="item">
+                    <img src="#travel-kit-b-o-c">
+                    <div class="item">
+                        <span class="category"> Набор для путешествий</span>
+                        <span class="title"> «Baxter of California»</span>
+                    </div>
+                    <div class="item-buy">
+                        <span class="price">2 900 руб.</span>
+                        <a class="buy" href="#buy">Купить</a>
                     </div>
                 </div>
-                <div class="item-list">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                    </ul>
-                </div>
             </section>
+            <div class="list">
+                <ul>
+                    <li><a href="#1">1</a></li>
+                    <li><a href="#2">2</a></li>
+                    <li><a href="#3">3</a></li>
+                    <li><a href="#4">4</a></li>
+                </ul>
+            </div>
         </form>
     </main>
     <footer class="main-fottor">
