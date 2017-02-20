@@ -1,6 +1,49 @@
+html,
+body {
+	min-width: 1122px;
+	min-height: 1750px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #000000 url("../img/background.jpg") no-repeat 50% 3px;
+}
 .container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	width: 1200px;
+	margin: 0 auto;
+	width: 942px;
+	border: 1px solid green;
+}
+
+.main-navigation {
+	display: inline-block;
+	width: 780px;
+	height: 72px;
+	background: #000000;
+}
+	.main-navigation ul{
+		display: flex;
+		list-style: none;
+	}
+
+	.main-navigation a {
+			text-decoration: none;
+			color: white;
+		}
+
+.user-block {
+		display: inline-block;
+		justify-content: flex-end;
+		align-items: center;
+		width: 140px;
+		height: 72px;
+		background: #000000 url(../img/icon-login.png) no-repeat 60% 50%;
+	}
+
+.index-logo {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
 }
