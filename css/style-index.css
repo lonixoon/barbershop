@@ -11,7 +11,7 @@ body {
 }*/
 
 body {
-	background: #000000 url(../img/background.jp) no-repeat 50% 3px;
+	background: #000000 url(../img/background.jpg) no-repeat 50% 3px;
 }
 .container {
 	display: flex;
@@ -57,6 +57,10 @@ body {
 	.user-block a{
 		text-decoration: none;
 		color: white;
+	}
+	.user-block a::before {
+			content: " ";
+			background: url(../img/icon-login.png);
 	}
 
 .index-logo {

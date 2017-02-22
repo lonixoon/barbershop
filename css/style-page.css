@@ -11,7 +11,12 @@ body {
 }*/
 
 body {
-	background: #000000 url(../img/background.jp) no-repeat 50% 3px;
+	/*background: #000000 url(../img/background.jpg) no-repeat 50% 3px;*/
+	background: #000000;
+}
+
+main {
+	background: #000000 url(../img/background-block.jpg)
 }
 .container {
 	display: flex;
@@ -27,9 +32,9 @@ body {
 	justify-content: space-between;
 }
 
-.main-header {
+/*.main-header {
 	margin-bottom: 60px;
-}
+}*/
 
 .main-navigation {
 	width: 780px;
@@ -58,16 +63,6 @@ body {
 		text-decoration: none;
 		color: white;
 	}
-
-.index-logo {
-	display: flex;
-	width: 368px;
-	height: 204px;
-	margin: 0 auto;
-	margin-bottom: 25px;
-	border: 1px solid yellow
-
-}
 
 .features {
 	display: flex;
@@ -109,7 +104,7 @@ body {
 
 
 .main-footer {
-	margin-top: 65px;
+/*	margin-top: 65px;*/
 	color: #ffffff;
 }
 	.flex-footer {
