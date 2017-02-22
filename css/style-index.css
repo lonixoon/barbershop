@@ -11,7 +11,7 @@ body {
 }*/
 
 body {
-	background: #000000 url(../img/background.jpg) no-repeat 50% 3px;
+	background: #000000 url(../img/background.jp) no-repeat 50% 3px;
 }
 .container {
 	display: flex;
@@ -22,8 +22,9 @@ body {
 	border: 1px solid green;
 }
 
-.flex-row {
+.flex-navigation {
 	display: flex;
+	justify-content: space-between;
 }
 
 .main-header {
@@ -105,3 +106,25 @@ body {
 		border: 1px solid yellow;
 	}
 
+
+
+.main-footer {
+	margin-top: 65px;
+	color: #ffffff;
+}
+	.flex-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+	.footer-contacts {
+		border: 1px solid yellow
+	}
+
+	.footer-social {
+		border: 1px solid yellow
+	}
+
+	.footer-developer {
+		border: 1px solid yellow
+	}
