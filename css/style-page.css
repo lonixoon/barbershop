@@ -1,7 +1,7 @@
 html,
 body {
 	min-width: 1122px;
-	min-height: 1750px;
+	/*min-height: 1750px;*/
 	margin: 0;
 	padding: 0;
 }
@@ -11,13 +11,14 @@ body {
 }*/
 
 body {
-	/*background: #000000 url(../img/background.jpg) no-repeat 50% 3px;*/
-	background: #000000;
+	background: #ffffff url(../img/background-block.jpg);
+	color: white;
 }
 
 main {
-	background: #000000 url(../img/background-block.jpg)
+	color: black;
 }
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -27,19 +28,18 @@ main {
 	border: 1px solid green;
 }
 
-.flex-navigation {
+.header-flex {
 	display: flex;
 	justify-content: space-between;
 }
 
-/*.main-header {
-	margin-bottom: 60px;
-}*/
+.main-header {
+	background: #000000;
+}
 
 .main-navigation {
 	width: 780px;
-	min-height: 70px;
-	background: #000000;
+	min-height: 70px;	
 	border: 1px solid yellow;
 }
 	.main-navigation ul{
@@ -48,21 +48,35 @@ main {
 	}
 
 	.main-navigation a {
-			text-decoration: none;
-			color: white;
-		}
+		text-decoration: none;	
+		color: white;
+	}
 
 .user-block {
 		width: 140px;
-		min-height: 70px;
-		background: #000000;
+		min-height: 70px;		
 		border: 1px solid yellow;		
 	}
 
 	.user-block a{
-		text-decoration: none;
+		text-decoration: none;	
 		color: white;
 	}
+
+	.user-block a::before {
+			content: " ";
+			background: url(../img/icon-login.png);
+	}
+
+.index-logo {
+	display: flex;
+	width: 368px;
+	height: 204px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	border: 1px solid yellow
+
+}
 
 .features {
 	display: flex;
@@ -70,9 +84,9 @@ main {
 	margin-bottom: 80px;
 }
 
-	.features-item {
+	.feature {
 		width: 300px;
-		min-height: 170px;
+		min-height: 150px;
 		text-align: center;
 		color: #ffffff;
 		border: 1px solid yellow;
@@ -88,15 +102,16 @@ main {
 	background: 
 		url(../img/separator.png) no-repeat 50% 50%,
 		#ffffff url(../img/background-block.jpg);
+	color: black;
 	border: 1px solid red;
 }
 
-	.index-content-left {
+	.index-content__left {
 		width: 330px;
 		border: 1px solid yellow;
 	}
 
-	.index-content-right {
+	.index-content__right{
 		width: 300px;
 		border: 1px solid yellow;
 	}
@@ -104,22 +119,23 @@ main {
 
 
 .main-footer {
-/*	margin-top: 65px;*/
+	background: #000000;
 	color: #ffffff;
+	font-style: bold;
 }
-	.flex-footer {
+	.footer-flex {
 	display: flex;
 	justify-content: space-between;
 }
 
-	.footer-contacts {
+	.contacts {
 		border: 1px solid yellow
 	}
 
-	.footer-social {
+	.social {
 		border: 1px solid yellow
 	}
 
-	.footer-developer {
+	.developer {
 		border: 1px solid yellow
 	}
