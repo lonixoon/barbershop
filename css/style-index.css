@@ -11,7 +11,8 @@ body {
 }*/
 
 body {
-	background: #000000 url(../img/background.jpg) no-repeat 50% 3px;
+	background: #000000 url(../img/background.jp) no-repeat 50% 3px;
+	color: white;
 }
 .container {
 	display: flex;
@@ -97,6 +98,7 @@ body {
 	background: 
 		url(../img/separator.png) no-repeat 50% 50%,
 		#ffffff url(../img/background-block.jpg);
+	color: black;
 	border: 1px solid red;
 }
 
@@ -115,6 +117,7 @@ body {
 .main-footer {
 	margin-top: 65px;
 	color: #ffffff;
+	font-style: bold;
 }
 	.flex-footer {
 	display: flex;
