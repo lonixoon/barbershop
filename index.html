@@ -52,72 +52,65 @@
             </div>
         </section>
         <section class="index-content">
-            <div class="index-content__left">
-                <div class="news-preview">
-                    <h2 class="news-preview__title">Новости</h2>
-                    <ul class="news-preview__body">
-                        <li>
-                            <p>
-                             Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
-                            </p>
-                        </li>
-                            <time datetime="2016-09-19">19 сентября</time>
-                        <li>
-                            <p>
-                             В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
-                            </p>
-                            <time datetime="2016-01-11">11 января</time>
-                        </li>
-                    </ul>
-                    <a href="#" class="btn">Все новости</a>
-                </div>
+            <div class="index-content__item">
+                <h2 class="item__title">Новости</h2>
+                <ul class="item__body">
+                    <li>
+                        <p>
+                         Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+                         <br><time datetime="2016-09-19">19 сентября</time>
+                        </p>
+                    </li>                        
+                    <li>
+                        <p>
+                         В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
+                         <br><time datetime="2016-01-11">11 января</time>
+                        </p>
+                        
+                    </li>
+                </ul>
+                <a href="#" class="btn">Все новости</a>
             </div>
-            <div class="index-content__right">
-                <div class="gallery">
-                    <h2 class="gallery__title">Фотогалерея</h2>
-                    <figure class="gallery__body">
-                        <img src="img/interior.jpg" alt="Интерьер">
-                        <button class="btn gallery-prev">Назад</button>
-                        <button class="btn gallery-next">Вперед</button>
-                    </figure>
-                </div>
+            <div class="index-content__item">
+                <h2 class="item__title">Фотогалерея</h2>
+                <figure class="item__body gallery">
+                    <img src="img/interior.jpg" alt="Интерьер">
+                    <button disabled class="btn gallery__prev disabled">Назад</button>
+                    <button class="btn gallery__next">Вперед</button>
+                </figure>
             </div>
         </section>
         <section class="index-content">
-            <div class="index-content__left">
-                <div class="contacts">
-                    <h2 class="contacts__title">Контактная информация</h2>
-                    <div class="contacts__body">
-                        <p>
-                         Барбершоп «Бородинский»<br>
-                         Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                         Телефон: +7 (495) 666-02-66
-                        </p>
-                        <p>
-                         Время работы:<br>
-                         ПН - ПТ: с 10:00 до 22:00<br>
-                         СБ - ВС: с 10:00 до 19:00
-                        </p>
-                    </div>
-                    <div class="contacts__links">
-                        <a href="#how-find" class="btn">Как проехать</a>
-                        <a href="#feedback" class="btn">Обратная связь</a>
-                    </div>
+            <div class="index-content__item">
+                <h2 class="item__title">Контактная информация</h2>
+                <div class="item__body">
+                    <p>
+                     Барбершоп «Бородинский»<br>
+                     Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                     Телефон: +7 (495) 666-02-66
+                    </p>
+                    <p>
+                     Время работы:<br>
+                     ПН - ПТ: с 10:00 до 22:00<br>
+                     СБ - ВС: с 10:00 до 19:00
+                    </p>
+                </div>
+                <div class="contacts__links">
+                    <a href="#how-find" class="btn">Как проехать</a>
+                    <a href="#feedback" class="btn">Обратная связь</a>
                 </div>
             </div>
-            <div class="index-content__right">
-                <div class="appointments">
-                    <h2 class="appointments__title">Записаться</h2>
-                    <div class="appointments__body">
-                        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждение брони</p>                        
-                        <form class="appointmant__form" action="#" method="post">
-                            <input type="text" name="data" placeholder="Дата">
-                            <input type="text" name="time" placeholder="Время">
-                            <input type="text" name="name" placeholder="Ваше имя">
-                            <input type="tel" name="phone" placeholder="Телефон">
-                            <button class="btn">Отправить</button>
-                        </form>
-                    </div>
+            <div class="index-content__item">
+                <h2 class="item__title">Записаться</h2>
+                <div class="item__body">
+                    <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждение брони</p>                        
+                    <form class="appointmant__form" action="#" method="post">
+                        <input type="text" name="data" placeholder="Дата">
+                        <input type="text" name="time" placeholder="Время">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="tel" name="phone" placeholder="Телефон">
+                        <button class="btn">Отправить</button>
+                    </form>
                 </div>
             </div>
         </section>
