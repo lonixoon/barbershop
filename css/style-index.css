@@ -293,7 +293,11 @@ h2 {
 
 			border: 2px solid #000000;
 			background: #f9f6f3;
+		}
 
+		.appointmant__form .btn {
+			width: 300px;
+			margin-right: 0;
 		}
 
 
