@@ -1,7 +1,5 @@
 html,
 body {
-/*	min-width: 1122px;
-	min-height: 1750px;*/
 	margin: 0;
 	padding: 0;
 }
@@ -30,8 +28,7 @@ h2 {
 	flex-direction: column;
 	width: 940px;
 	margin: 0 auto;
-	padding: 0 10px;	
-	border: 1px solid green;
+	padding: 0 10px;
 }
 
 .header-flex {
@@ -50,7 +47,6 @@ h2 {
 	height: 70px;
 	font-size: 16px;
 	line-height: 20px;
-	border: 1px solid yellow;
 }
 	.main-navigation ul{
 		margin: 0;
@@ -60,10 +56,23 @@ h2 {
 	}
 
 	.main-navigation a {
+		position: relative;
 		display: flex;
 		padding: 25px 20px;
 		text-decoration: none;	
 		color: white;
+	}
+
+	.main-navigation li:first-child a:after {
+		content: "";
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		margin-right: 20px;
+		width: 100%;
+		height: 4px;
+
+		background: #ffffff;
 	}
 
 	.main-navigation a:hover {
@@ -75,7 +84,6 @@ h2 {
 		height: 70px;
 		font-size: 16px;
 		line-height: 20px;	
-		border: 1px solid yellow;		
 	}
 
 	.user-block a{
@@ -111,8 +119,6 @@ h2 {
 	height: 204px;
 	margin: 0 auto;
 	margin-bottom: 25px;
-	border: 1px solid yellow
-
 }
 
 .features {
@@ -126,7 +132,6 @@ h2 {
 		min-height: 150px;
 		text-align: center;
 		color: #ffffff;
-		border: 1px solid yellow;
 	}
 
 		.feature__name {
@@ -165,24 +170,17 @@ h2 {
 		url(../img/separator.png) no-repeat 50% 50%,
 		#f8f5f2 url(../img/background-block.jpg);
 	color: black;
-	border: 1px solid red;
 }
 
 	.index-content__item {
 		/*box-sizing: border-box;*/
 		width: 330px;
-		border: 1px solid yellow;
 	}
 
 	.index-content__item:nth-child(even) {
 		width: 300px;
-		border: 1px solid yellow;
 	}
 
-	  /*	.index-content__right{
-			width: 300px;
-			border: 1px solid yellow;
-		}*/
 		.item__title {
 			display: flex;
 			margin: 0;
@@ -299,8 +297,7 @@ h2 {
 			background: #f9f6f3;
 		}
 
-		.appointmant__form input:hover,
-		.appointmant__form input:focus {
+		.appointmant__form input:hover {
 			border-color: #663d15;
 		}
 		
@@ -308,10 +305,10 @@ h2 {
 			color: #000000;
 		}
 
-		.appointmant__form :hover::-webkit-input-placeholder,
+		/*.appointmant__form :hover::-webkit-input-placeholder,
 		.appointmant__form :focus::-webkit-input-placeholder {
 			color: #663d15;
-		}
+		}*/
 
 		.appointmant__form .btn {
 			display: flex;
@@ -342,12 +339,10 @@ h2 {
 	.contacts {
 		text-decoration: none;	
 		color: white;
-		border: 1px solid yellow
 	}
 
 	.social {
 		text-align: center;
-		border: 1px solid yellow
 	}
 
 		.social__btn {
@@ -379,9 +374,9 @@ h2 {
 			
 	.developer {
 		text-align: center;
-		border: 1px solid yellow
 	}
 
-	.developer a {
-		margin-right: 0;
+	.developer a:hover {
+		background: #ffffff;
+		color: #000000;
 	}
