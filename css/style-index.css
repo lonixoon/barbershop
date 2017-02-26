@@ -82,7 +82,7 @@ h2 {
 		position: relative;
 		display: flex;
 		padding: 25px 20px 25px 50px;
-		text-decoration: none;	
+		text-decoration: none;
 		color: white;
 	}
 
@@ -210,14 +210,18 @@ h2 {
 			.item__body time {
 				text-transform: none;
 				font-weight: 400;
-
 			}
 
+			.contacts__links a:first-child {
+				margin-right: 10px
+			}
+		/*Начало: Общий стиль для всех кнопок (плохо работает в safari (IOS)*/
 		.btn {
 			display: inline-flex;
 			justify-content: center;
-			padding: 10px 33px;
-			margin-right: 13px;
+			/*display: inline;*/
+			/*text-align: center;*/
+			padding: 10px 33px;			
 
 			font-family: "PT Sans Narrow", "arial", sans-serif;	
 			font-weight: 700;
@@ -247,7 +251,7 @@ h2 {
 		.btn:disabled:hover {
 			background: #000000;
 		}
-
+		/*Конец: Общий стиль для всех кнопок*/
 		.gallery {
 			display: flex;
 			flex-wrap: wrap;
@@ -278,7 +282,7 @@ h2 {
 
 		.appointmant__form input {
 			padding-left: 15px;
-			margin-bottom: 19px;
+			margin-bottom: 20px;
 			box-sizing: border-box;
 			width: 140px;
 			height: 43px;
@@ -295,9 +299,23 @@ h2 {
 			background: #f9f6f3;
 		}
 
+		.appointmant__form input:hover,
+		.appointmant__form input:focus {
+			border-color: #663d15;
+		}
+		
+		.appointmant__form ::-webkit-input-placeholder {
+			color: #000000;
+		}
+
+		.appointmant__form :hover::-webkit-input-placeholder,
+		.appointmant__form :focus::-webkit-input-placeholder {
+			color: #663d15;
+		}
+
 		.appointmant__form .btn {
-			width: 300px;
-			margin-right: 0;
+			display: flex;
+			flex-grow: 1;
 		}
 
 
@@ -305,20 +323,65 @@ h2 {
 .main-footer {
 	margin-top: 65px;
 	color: #ffffff;
+	background: #232323;
 }
+
+.main-footer a{
+	color: white;
+}
+
+.main-footer a:hover {
+	text-decoration: none;
+}
+	
 	.footer-flex {
 	display: flex;
 	justify-content: space-between;
 }
 
 	.contacts {
+		text-decoration: none;	
+		color: white;
 		border: 1px solid yellow
 	}
 
 	.social {
+		text-align: center;
 		border: 1px solid yellow
 	}
 
+		.social__btn {
+			display: inline-flex;
+			margin-right: 5px;  
+			width: 43px;
+			height: 43px;
+			font-size: 0;
+
+			background: #000000 url(../img/social.png) no-repeat;
+		}
+
+		.social__btn:hover {
+			-webkit-filter: invert(100%);
+		}
+
+			.social__btn_vk {
+				background-position: 8px 50%;
+			}
+			
+			.social__btn_fb {
+				background-position: 50% 50%;
+			}
+			
+			.social__btn_inst {
+				margin-right: 0;
+				background-position: -88px 50%;
+			}
+			
 	.developer {
+		text-align: center;
 		border: 1px solid yellow
+	}
+
+	.developer a {
+		margin-right: 0;
 	}
