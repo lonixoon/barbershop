@@ -19,10 +19,6 @@ body {
 	background: #000000 url(../img/body-bg.jpg) no-repeat center top;
 }
 
-h2 {
-
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -31,7 +27,7 @@ h2 {
 	padding: 0 10px;
 }
 
-.header-flex {
+.flex {
 	display: flex;
 	justify-content: space-between;
 }
@@ -63,6 +59,12 @@ h2 {
 		color: white;
 	}
 
+	.main-navigation li:first-child a {
+		width: 111px;
+		font-size: 0px;
+		background: url(../img/logo.png) no-repeat 50% 50%;
+	}
+
 	.main-navigation li:first-child a:after {
 		content: "";
 		position: absolute;
@@ -75,8 +77,8 @@ h2 {
 		background: #ffffff;
 	}
 
-	.main-navigation a:hover {
-		background: #242424;
+	.main-navigation li a:hover {
+		background-color: #242424;
 	}
 
 .user-block {
