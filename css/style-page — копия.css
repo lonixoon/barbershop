@@ -54,6 +54,7 @@ body {
 	}
 
 	.main-navigation a {
+		position: relative;
 		display: flex;
 		padding: 25px 20px;
 		text-decoration: none;	
@@ -66,11 +67,7 @@ body {
 		background: url(../img/logo.png) no-repeat 50% 50%;
 	}
 
-	.main-navigation .active {
-		position: relative;
-	}
-
-	.main-navigation .active::after {
+	.main-navigation li:nth-child(4) a:after {
 		content: "";
 		position: absolute;
 		left: 0px;
@@ -122,33 +119,33 @@ body {
 /*end-header*/
 
 /*start-main*/
-.page-title {
+.title {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 40px;
 
 	border: 1px solid red;
 }
-	.page-title__head {
+	.title__head {
 		font-size: 30px;
 		line-height: 42px;
 		margin-bottom: 15px;
 	}
 
-	.page-title__bread-crumbs ul {
+	.title__bread-crumbs ul {
 		display: flex;
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 
-	.page-title__bread-crumbs li {
+	.title__bread-crumbs li {
 		position: relative;
 		padding-right: 15px;
 		margin-right: 25px;
 	}
 
-	.page-title__bread-crumbs li:not(:last-child)::after {
+	.title__bread-crumbs li:not(:last-child)::after {
 			content: "";
 			position: absolute;
 			left: 100%;
@@ -162,11 +159,11 @@ body {
 			transform: rotate(45deg);
 		}
 
-	.page-title__bread-crumbs li:last-child{
+	.title__bread-crumbs li:last-child{
 		opacity: 0.3;
 	}
 
-	.page-title__bread-crumbs a {		
+	.title__bread-crumbs a {		
 		text-decoration: none;
 		color: #000000;
 	}	
@@ -198,7 +195,7 @@ body {
 			left: 0;
 		}
 
-.page h2 {
+h2 {
 	font-size: 24px;
 	line-height: 1.2;
 }

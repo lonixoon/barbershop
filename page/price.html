@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../css/style-page.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/style-index.css">
     <title>Барбершоп «Бородинский»</title>
 </head>
-<body>
+<body class="page">
     <header class="main-header">
         <div class="container">
             <div class="flex">
-                <nav class="main-navigation">
+                <nav class="main-navigation">                    
                     <ul>
-                        <li><a href="#index">Главная</a></li>
+                        <li  class="main-navigation__item_index-page"><a href="#index">Главная</a></li>
                         <li><a href="#info">Информация</a></li>
                         <li><a href="#news">Новости</a></li>
-                        <li><a href="page/price.html">Прайс-лист</a></li>
+                        <li class="active"><span>Прайс-лист</span></li>
                         <li><a href="#shop">Магазин</a></li>
                         <li><a href="#container">Контакты</a></li>
                     </ul>
@@ -28,21 +28,21 @@
         </div>
     </header>
     <main class="container">
-        <section class="title">
-            <h1 class="title__head">Прайс-лист</h1>
-            <div class="title__bread-crumbs">
+        <section class="page-title">
+            <h1 class="page-title__head">Прайс-лист</h1>
+            <div class="page-title__bread-crumbs">
                 <ul>
                     <li><a href="#index">Главная</a></li>
                     <li>Прайс-лист</li>
                 </ul>
             </div>
         </section>
-        <div class="slogan">Истинно мужская классика</div>
+        <div class="slogan"><h2>Истинно мужская классика</h1></div>
         <div class="flex">  
             <div class="products">
-                <span class="products__slogan">Мы используем только<br>
-                лучшиые средства:</span>
-                <ul>
+                <h2 class="products__title">Мы используем только<br>
+                лучшиые средства:</h2>
+                <ul class="products__body">
                     <li>Baxter of California</li>
                     <li>Mr Natty</li>
                     <li>Suavecito</li>
@@ -50,9 +50,9 @@
                 </ul>
             </div>
             <div class="price">
-                <span>Цены на услуги<br>
-                наших мастеров:</span>
-                <table>
+                <h2 class="price__title">Цены на услуги<br>
+                наших мастеров:</h2>
+                <table class="price__body">
                     <tr>
                         <td>Стрижка</td>
                         <td>1500р.</td>
@@ -71,10 +71,10 @@
             </div>
         </div> 
         <div class="about-us">
-            <span class="about-us__title">Несколько слов о нас:</span>
+            <h2 class="about-us__title">Несколько слов о нас:</h2>
             <div class="about-us__body">
-                <p class="about-us__body_item">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас – это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-                <p class="about-us__body_item">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденные перерыв. Здесь вы можете погрузится в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                <p class="about-us__body_left">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас – это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+                <p class="about-us__body_right">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденные перерыв. Здесь вы можете погрузится в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
             </div>
         </div>
     </main>
