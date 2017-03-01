@@ -338,18 +338,36 @@ body/* class for index page*/ {
 	background: #f8f5f2 url(../img/background-block.jpg);
 }
 
+.page h2 {
+	font-size: 24px;
+	line-height: 1.2;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.page p {
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+.page table {
+	border-collapse: collapse;
+}
+
+.page td {
+	padding: 10px 15px;
+}
+
 .page .main-header {
 	margin-bottom: 20px;
 }
 
-.page-title {
+.page .page-title {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 40px;
-
-	border: 1px solid red;
 }
-	.page-title__head {
+	.page-title	.page-title__head {
 		font-size: 30px;
 		line-height: 42px;
 		margin-bottom: 15px;
@@ -395,86 +413,75 @@ body/* class for index page*/ {
 		text-decoration: underline;
 	}
 
-.slogan {
-	position: relative;
+.page .slogan {
+	margin-top: 55px;
 	text-align: center;
-	font-size: 48px;
-	line-height: 1.2;
-	border: 1px solid red;
 }
 
-		.slogan::before,
-		.slogan::after {
-		 	content: "";
-			position: absolute;	
-			top: 50%;	
-			width: 160px;
-			height: 2px;
-			background: #000000;
-		}
-
-		.slogan::after {
-			right: 0;
-		}
-		.slogan::before {
-			left: 0;
-		}
-
-.page h2 {
-	font-size: 24px;
-	line-height: 1.2;
-	margin-top: 60px;
-	margin-bottom: 30px;
+.page .slogan::after {
+	content: "";
+	position: relative;
+	top: -25px;
+	display: flex;
+	border-bottom: 2px solid #000000;
+	z-index: 1;
 }
+		.slogan h2 {			
+			position: relative;
 
-.products {
+			display: inline-flex;
+			margin: 0;
+			padding: 0 25px;
+			font-size: 48px;
+			line-height: 1;
+			text-align: center;
+			background: #f8f5f2 url(../img/background-block.jpg) repeat;
+			z-index: 2;
+		}
+
+.page .products {
 	width: 460px;
 	margin-right: 10px;
-	border: 1px solid red;
 	}
 	
-	.products__title {
+	.products .products__title {
 		margin-bottom: 25px;
 	}
 
-	.products__body {
+	.products .products__body {
 		list-style: none;
 		padding: 0;
 		margin-bottom: 0;
 	}
 
-	.products__body li {
-		position: relative;
-		padding-left: 20px;
-		margin-bottom: 14px;
+		.products__body li {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 14px;
+			}
+
+		.products__body li::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 50%;
+			width: 8px;
+			height: 8px;
+			transform: rotate(45deg);
+			margin-bottom: -4px;
+			background: #000000;		
 		}
 
-	.products__body li::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: 50%;
-		width: 8px;
-		height: 8px;
-		transform: rotate(45deg);
-
-		margin-bottom: -4px;
-
-		background: #000000;		
-	}
-
-.price {
+.page .price {
 	margin-left: 10px;
 	width: 460px;
-	border: 1px solid red;
-
 }
 
-	.price__title {
+	.price .price__title {
 		margin-bottom: 30px;
 	}
 
-	.price__body {
+	.price .price__body {
 		border-collapse: collapse;
 		border: 2px solid #000000;
 	}
@@ -492,32 +499,34 @@ body/* class for index page*/ {
 			padding-left: 0;
 		}
 
-.about-us {
-	border: 1px solid red;
+.page .about-us {
 }
-	.about-us__title {
-	}
-	.about-us__body {
+	.about-us .about-us__title {
+		}
+
+	.about-us .about-us__body {
 		display: flex;
 		justify-content: space-between;
-	}
-	.about-us__body_left {
-		width: 460px;
-		padding-right: 80px;
-		margin-right: 10px
-	}
+		}
+		
+		.about-us__body p {
+			margin-top: 0;
+		}
 
-	.about-us__body_right {
-		width: 460px;
-		padding-right: 80px;
-		margin-left: 10px
-	}
+		.about-us .about-us__body_item {
+			box-sizing: border-box;
+			width: 460px;
+			padding-right: 80px;
+			padding-top: 0;
+		}
 /*end style for content page*/
 
 
 
 .main-footer {
 	margin-top: 65px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 	color: #ffffff;
 	background: #232323 url(../img/footer-bg.jpg);
 }
