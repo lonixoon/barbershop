@@ -227,44 +227,6 @@ body/* class for index page*/ {
 				margin-right: 10px
 			}
 
-
-/*start style for btn*/
-.btn {
-	display: inline-flex;
-	justify-content: center;
-	padding: 10px 33px;			
-
-	font-family: "PT Sans Narrow", "arial", sans-serif;	
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 24px;
-
-	color: #ffffff;
-	text-decoration: none;
-	text-transform: uppercase;
-
-	border: none;
-	cursor: pointer;
-	outline: none;
-	background: #000000;
-}
-
-.btn:hover,
-.btn:active {
-	background: #663d15;
-}
-
-.btn:disabled {
-	opacity: 0.5;
-	cursor: default;
-}
-
-.btn:disabled:hover {
-	background: #000000;
-}
-/*end style for btn*/
-
-
 		.gallery {
 			display: flex;
 			flex-wrap: wrap;
@@ -352,11 +314,17 @@ body/* class for index page*/ {
 
 .page table {
 	border-collapse: collapse;
+	border: 2px solid #000000;
 }
 
-.page td {
-	padding: 10px 15px;
-}
+	.page td {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+
+		border: 2px solid #000000;
+		background-color: #f9f6f3;
+	}
 
 .page .main-header {
 	margin-bottom: 20px;
@@ -415,29 +383,7 @@ body/* class for index page*/ {
 
 .page .slogan {
 	margin-top: 55px;
-	text-align: center;
 }
-
-.page .slogan::after {
-	content: "";
-	position: relative;
-	top: -25px;
-	display: flex;
-	border-bottom: 2px solid #000000;
-	z-index: 1;
-}
-		.slogan h2 {			
-			position: relative;
-
-			display: inline-flex;
-			margin: 0;
-			padding: 0 25px;
-			font-size: 48px;
-			line-height: 1;
-			text-align: center;
-			background: #f8f5f2 url(../img/background-block.jpg) repeat;
-			z-index: 2;
-		}
 
 .page .products {
 	width: 460px;
@@ -454,24 +400,6 @@ body/* class for index page*/ {
 		margin-bottom: 0;
 	}
 
-		.products__body li {
-			position: relative;
-			padding-left: 20px;
-			margin-bottom: 14px;
-			}
-
-		.products__body li::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			bottom: 50%;
-			width: 8px;
-			height: 8px;
-			transform: rotate(45deg);
-			margin-bottom: -4px;
-			background: #000000;		
-		}
-
 .page .price {
 	margin-left: 10px;
 	width: 460px;
@@ -482,16 +410,11 @@ body/* class for index page*/ {
 	}
 
 	.price .price__body {
-		border-collapse: collapse;
-		border: 2px solid #000000;
 	}
 
 		.price__body td {
 			box-sizing: border-box;
-			padding: 10px 0px 10px 15px;
 			width: 230px;
-			border: 2px solid #000000;
-			background-color: #f9f6f3;
 		}
 
 		.price__body td:nth-child(even) {
@@ -520,8 +443,6 @@ body/* class for index page*/ {
 			padding-top: 0;
 		}
 /*end style for content page*/
-
-
 
 .main-footer {
 	margin-top: 65px;
@@ -588,3 +509,88 @@ body/* class for index page*/ {
 		background: #ffffff;
 		color: #000000;
 	}
+
+
+/*СПИСОК НЕ СТАНДАРТЫНХ ЭЛЕМЕНТОВ ДЛЯ ПОДКЛЮЧЕНИЕ ЧЕРЕЗ CLASS*/
+
+/*start non-standard-title H2 / не стандартный заголовок(по бокам линии)*/
+.non-standard-title {
+	text-align: center;
+}
+
+.non-standard-title::after {
+content: "";
+position: relative;
+top: -25px;
+display: flex;
+border-bottom: 2px solid #000000;
+z-index: 1;
+}
+	.non-standard-title h2 {		
+		position: relative;
+		display: inline-flex;
+		margin: 0;
+		padding: 0 25px;
+		font-size: 48px;
+		line-height: 1;
+		background: #f8f5f2 url(../img/background-block.jpg) repeat;
+		z-index: 2;
+	}
+/*end non-standard-title / не стандартный заголовок(по бокам линии)*/
+
+/*start non-standard list view UL / не стандартный список (с ромбиком в начале)*/
+.non-standard-list-view li {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 14px;
+	}
+
+.non-standard-list-view li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	width: 8px;
+	height: 8px;
+	transform: rotate(45deg);
+	margin-bottom: -4px;
+	background: #000000;		
+}
+/*end non-standard list view*/
+
+/*start style for batton / стиль для всх кнопок*/
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	padding: 10px 33px;			
+
+	font-family: "PT Sans Narrow", "arial", sans-serif;	
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background: #000000;
+}
+
+.btn:hover,
+.btn:active {
+	background: #663d15;
+}
+
+.btn:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.btn:disabled:hover {
+	background: #000000;
+}
+/*end style for btn*/
+
