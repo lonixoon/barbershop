@@ -392,6 +392,11 @@ body/* class for index page*/ {
 		margin-bottom: 0;
 	}
 
+	.products__body li {
+	margin-bottom: 14px;
+	}
+
+
 .page .price {
 	margin-left: 10px;
 	width: 460px;
@@ -446,6 +451,8 @@ body/* class for index page*/ {
 	.pictures img {
 	margin-right: 20px;
 	margin-bottom: 20px;
+
+	box-shadow: 0 0 15px rgba(0,0,0,0.2)
 	}
 
 	.pictures img:first-child,
@@ -463,8 +470,13 @@ body/* class for index page*/ {
 		opacity: 0.3;
 	}
 
+.page .description {
+	margin-bottom: 30px;
+}
+
 .page .purchase {
 	display: inline-flex;
+	margin-bottom: 60px;
 }
 	.purchase__price {
 		justify-content: center;
@@ -476,14 +488,25 @@ body/* class for index page*/ {
 
 }
 	.includes__title {
-
+		font-size: 24px;
+		line-height: 1.3;
 	}
 
-	.includes__body {
-
+	.includes__body li {
+		margin: 0;
 	}
 
-.page 
+/*start contener for page left and right*/
+.product-store_left {
+	width: 460px;
+	margin-right: 10px;
+	}
+
+.product-store_right {
+	width: 460px;
+	margin-left: 80px;
+}
+/*end contener for page left and right*/
 
 /*end Styles for product pages in the store (baxter-of-california.html)*/
 .main-footer {
@@ -589,8 +612,6 @@ z-index: 1;
 .non-standard-list li {
 	position: relative;
 	padding-left: 20px;
-	margin-bottom: 14px;
-
 	}
 
 .non-standard-list li::before {
@@ -641,4 +662,5 @@ z-index: 1;
 	background: #000000;
 }
 /*end style for btn*/
+
 
