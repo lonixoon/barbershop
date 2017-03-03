@@ -4,10 +4,6 @@ body {
 	padding: 0;
 }
 
-/** {
-	box-sizing: border-box;
-}*/
-
 body/* class for index page*/ {
 	min-width: 960px;
 	font-family: "PT Sans Narrow", "arial", sans-serif;	
@@ -209,23 +205,23 @@ body/* class for index page*/ {
 			list-style: none;
 		}
 
-			.item__body p {
-				margin-top: 0;
-				margin-bottom: 25px;
-			}
+		.item__body p {
+			margin-top: 0;
+			margin-bottom: 25px;
+		}
 
-			.item__body li {
-				margin: 0px;
-			}
+		.item__body li {
+			margin: 0px;
+		}
 
-			.item__body time {
-				text-transform: none;
-				font-weight: 400;
-			}
+		.item__body time {
+			text-transform: none;
+			font-weight: 400;
+		}
 
-			.contacts__links a:first-child {
-				margin-right: 10px
-			}
+		.contacts__links a:first-child {
+			margin-right: 10px
+		}
 
 		.gallery {
 			display: flex;
@@ -294,7 +290,7 @@ body/* class for index page*/ {
 
 
 
-/*start style for content page*/
+/*start Common styles for content pages*/
 .page /*class for other page for site*/{
 	color: black;
 	background: #f8f5f2 url(../img/background-block.jpg);
@@ -325,7 +321,9 @@ body/* class for index page*/ {
 		border: 2px solid #000000;
 		background-color: #f9f6f3;
 	}
+/*end Common styles for content pages*/
 
+/*start styles for price.html*/
 .page .main-header {
 	margin-bottom: 20px;
 }
@@ -333,7 +331,7 @@ body/* class for index page*/ {
 .page .page-title {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 40px;
+	margin-bottom: 55px;
 }
 	.page-title	.page-title__head {
 		font-size: 30px;
@@ -381,22 +379,16 @@ body/* class for index page*/ {
 		text-decoration: underline;
 	}
 
-.page .slogan {
-	margin-top: 55px;
-}
-
 .page .products {
 	width: 460px;
 	margin-right: 10px;
 	}
 	
-	.products .products__title {
+	.products__title {
 		margin-bottom: 25px;
 	}
 
-	.products .products__body {
-		list-style: none;
-		padding: 0;
+	.products__body {
 		margin-bottom: 0;
 	}
 
@@ -405,45 +397,95 @@ body/* class for index page*/ {
 	width: 460px;
 }
 
-	.price .price__title {
+	.price__title {
 		margin-bottom: 30px;
 	}
 
-	.price .price__body {
+	.price__body {
 	}
 
-		.price__body td {
-			box-sizing: border-box;
-			width: 230px;
-		}
+	.price__body td {
+		box-sizing: border-box;
+		width: 230px;
+	}
 
-		.price__body td:nth-child(even) {
-			text-align: center;
-			padding-left: 0;
-		}
+	.price__body td:nth-child(even) {
+		text-align: center;
+		padding-left: 0;
+	}
 
 .page .about-us {
 }
-	.about-us .about-us__title {
+	.about-us__title {
 		}
 
-	.about-us .about-us__body {
+	.about-us__body {
 		display: flex;
 		justify-content: space-between;
 		}
 		
-		.about-us__body p {
-			margin-top: 0;
-		}
+	.about-us__body p {
+		margin-top: 0;
+	}
 
-		.about-us .about-us__body_item {
-			box-sizing: border-box;
-			width: 460px;
-			padding-right: 80px;
-			padding-top: 0;
-		}
-/*end style for content page*/
+			.about-us__body_item {
+				box-sizing: border-box;
+				width: 460px;
+				padding-right: 80px;
+				padding-top: 0;
+			}
+/*end Styles for price.html*/
 
+/*start Styles for product pages in the store (baxter-of-california.html)*/
+.page .pictures {
+	display: flex;
+	flex-wrap: wrap;
+	width: 460px;
+}
+
+	.pictures img {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	}
+
+	.pictures img:first-child,
+	.pictures img:nth-child(n+2):nth-child(3n+1) {
+		margin-right: 0px;
+	}
+
+.page .article {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+	.aticle__name {
+		opacity: 0.3;
+	}
+
+.page .purchase {
+	display: inline-flex;
+}
+	.purchase__price {
+		justify-content: center;
+		padding: 10px 33px;
+		background: #E5E5E5;
+	}
+
+.page .includes {
+
+}
+	.includes__title {
+
+	}
+
+	.includes__body {
+
+	}
+
+.page 
+
+/*end Styles for product pages in the store (baxter-of-california.html)*/
 .main-footer {
 	margin-top: 65px;
 	padding-top: 40px;
@@ -539,13 +581,19 @@ z-index: 1;
 /*end non-standard-title / не стандартный заголовок(по бокам линии)*/
 
 /*start non-standard list view UL / не стандартный список (с ромбиком в начале)*/
-.non-standard-list-view li {
+
+.non-standard-list {
+	list-style: none;
+	padding: 0;
+}
+.non-standard-list li {
 	position: relative;
 	padding-left: 20px;
 	margin-bottom: 14px;
+
 	}
 
-.non-standard-list-view li::before {
+.non-standard-list li::before {
 	content: "";
 	position: absolute;
 	left: 0;
