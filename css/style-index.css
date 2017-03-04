@@ -1,11 +1,11 @@
 /*СПИСОК НЕ СТАНДАРТЫНХ ЭЛЕМЕНТОВ ДЛЯ ПОДКЛЮЧЕНИЕ ЧЕРЕЗ CLASS*/
 
 /*start non-standard-title H2 / не стандартный заголовок(по бокам линии)*/
-.non-standard-title {
+.page .non-standard-title {
 	text-align: center;
 }
 
-.non-standard-title::after {
+.page .non-standard-title::after {
 content: "";
 position: relative;
 top: -25px;
@@ -13,7 +13,7 @@ display: flex;
 border-bottom: 2px solid #000000;
 z-index: 1;
 }
-	.non-standard-title h2 {		
+	.page .non-standard-title h2 {		
 		position: relative;
 		display: inline-flex;
 		margin: 0;
@@ -84,6 +84,8 @@ z-index: 1;
 	background: #000000;
 }
 /*end style for btn*/
+
+
 
 
 html,
@@ -278,7 +280,7 @@ body/* class for index page*/ {
 		width: 300px;
 	}
 
-		.item__title {
+	.index-content__item .item__title {
 			display: flex;
 			margin: 0;
 			padding: 0;
@@ -287,22 +289,22 @@ body/* class for index page*/ {
 			line-height: 42px;
 		}
 
-		.item__body {
+	.index-content__item .item__body {
 			margin: 0;
 			padding: 0;
 			list-style: none;
 		}
 
-		.item__body p {
+	.index-content__item .item__body p {
 			margin-top: 0;
 			margin-bottom: 25px;
 		}
 
-		.item__body li {
+	.index-content__item .item__body li {
 			margin: 0px;
 		}
 
-		.item__body time {
+	.index-content__item .item__body time {
 			text-transform: none;
 			font-weight: 400;
 		}
@@ -550,7 +552,7 @@ body/* class for index page*/ {
 	margin-right: 20px;
 	margin-bottom: 20px;
 
-	box-shadow: 0 0 15px rgba(0,0,0,0.2)
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 	}
 
 	.pictures img:first-child,
@@ -577,7 +579,6 @@ body/* class for index page*/ {
 	margin-bottom: 60px;
 }
 	.purchase__price {
-		justify-content: center;
 		padding: 10px 25px;
 		background: #E5E5E5;
 	}
@@ -605,24 +606,25 @@ body/* class for index page*/ {
 
 /*start Styles for shop pages in the store*/
 .page .sort {
-	width: 230px;
+	width: 220px;
+	margin-right: 10px;
 }	
 
-	.producers {
-		padding: 0;		
-		margin-bottom: 15px;
-		border: none;		
-	}
-
-	.producers div {
-		margin-bottom: 15px;	
-	}
-
-		.producers__title {
+	.sort legend {
 			margin-bottom: 20px;
 			font-size: 24px;
 			line-height: 1.2;
-		}
+	}
+
+	.form-element {
+		margin-bottom: 15px;	
+	}
+
+	.producers {
+		padding: 0;		
+		margin-bottom: 25px;
+		border: none;		
+	}
 
 		.producers__body {
 			display: flex;
@@ -631,24 +633,33 @@ body/* class for index page*/ {
 
 	.product-groups {
 		padding: 0;
-		margin-bottom: 20px;
+		margin-bottom: 35px;
 		border: none;
 	}
-
-	.product-groups div {
-		margin-bottom: 15px;	
-	}
-
-		.product-groups__title {
-			margin-bottom: 20px;
-			font-size: 24px;
-			line-height: 1.2;
-		}
 
 		.product-groups__body {
 			display: flex;
 			flex-direction: column;
 		}
+
+.page .items {
+	display: flex;
+	flex-wrap: wrap;
+	width: 700px;
+	margin-left: 10px;
+}
+
+	.items .item {
+		width: 220px;
+		height: 286px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	}
+
+	.items .item:nth-child(3n) {
+		margin-right: 0px;
+	}
 /*end Styles for shop pages in the store*/
 
 
