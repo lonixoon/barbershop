@@ -43,28 +43,28 @@
                 <fieldset class="producers">
                     <legend class="producers__title">Производители:</legend>
                     <div class="producers__body">
-                        <div class="form-element">
-                            <input type="checkbox" name="b-o-c" checked>
+                        <div class="checkbox">
+                            <input type="checkbox" id="b-o-c" name="b-o-c" checked>
                             <label for="b-o-c">Baxter of California</label>
                         </div>
-                        <div class="form-element">
-                            <input type="checkbox" name="m-n">
+                        <div class="checkbox">
+                            <input type="checkbox" id="m-n" name="m-n">
                             <label for="m-n">Mr Natty</label>
                         </div>
-                        <div class="form-element">
-                            <input type="checkbox" name="sua" checked>
+                        <div class="checkbox">
+                            <input type="checkbox" id="sua" name="sua" checked>
                             <label for="sua">Suavecito</label>
                         </div>
-                        <div class="form-element">
-                            <input type="checkbox" name="m+g">
+                        <div class="checkbox">
+                            <input type="checkbox" id="m+g" name="m+g">
                             <label for="m+g">Malin+Goetz</label>
                         </div>
-                        <div class="form-element">
-                            <input type="checkbox" name="mur">
+                        <div class="checkbox">
+                            <input type="checkbox" id="mur" name="mur">
                             <label for="mur">Murray's</label>
                         </div>
-                        <div class="form-element">
-                            <input type="checkbox" name="a-c" checked>
+                        <div class="checkbox">
+                            <input type="checkbox" id="a-c" name="a-c" checked>
                             <label for="a-c">American Crew</label>
                         </div>
                     </div>
@@ -72,17 +72,20 @@
                 <fieldset class="product-groups">
                     <legend class="product-groups__title">Группы товаров:</legend>
                     <div class="product-groups__body">
-                        <div class="form-element">
-                            <input type="radio" name="items-groups">
-                            <label for="items-groups">Бритвенные принадлежности</label>
+                        <div class="radio">
+                            <label for="items-groups">
+                                <input type="radio" name="items-groups" value="shaving-accessories">Бритвенные принадлежности
+                            </label>
                         </div>
-                        <div class="form-element">
-                            <input type="radio" name="items-groups" checked>
-                            <label for="items-groups">Средства для ухода</label>
+                        <div class="radio">  
+                            <label for="items-groups">
+                                <input type="radio" name="items-groups" value="care-products" checked>Средства для ухода
+                            </label>
                          </div>
-                         <div class="form-element">   
-                            <input type="radio" name="items-groups">
-                            <label for="items-groups">Аксесуары</label>
+                         <div class="radio">   
+                            <label for="items-groups">
+                                <input type="radio" name="items-groups" value="accessories">Аксесуары
+                            </label>
                         </div>
                     </div>
                 </fieldset>
@@ -94,8 +97,10 @@
                     <div class="item__body">
                         <span class="item__body_category">Набор для путешествий</span>
                         <span class="item__body_title">«Baxter of California»</span>
-                        <span class="item__body_price">2 900 руб.</span>
-                        <a class="item__body_buy" href="#buy">Купить</a>
+                        <div class="item__body_buys">
+                            <span class="item__body_price">2 900 руб.</span>
+                            <a class="item__body_buy btn" href="#buy">Купить</a>
+                        </div>
                     </div>
                 </div>
 
@@ -104,8 +109,10 @@
                     <div class="item__body">
                         <span class="item__body_category">Увлажняющий кондиционер</span>
                         <span class="item__body_title">«Baxter of California»</span>
-                        <span class="item__body_price">750 руб.</span>
-                        <a class="item__body_buy" href="#buy">Купить</a>
+                        <div class="item__body_buys">
+                            <span class="item__body_price">750 руб.</span>
+                            <a class="item__body_buy btn" href="#buy">Купить</a>
+                        </div>
                     </div>
                 </div>
 
@@ -114,8 +121,10 @@
                     <div class="item__body">
                         <span class="item__body_category">Гель для волос</span>
                         <span class="item__body_title">«Suavecito»</span>
-                        <span class="item__body_price">290 руб.</span>
-                        <a class="item__body_buy" href="#buy">Купить</a>
+                        <div class="item__body_buys">
+                            <span class="item__body_price">290 руб.</span>
+                            <a class="item__body_buy btn" href="#buy">Купить</a>
+                        </div>
                     </div>
                 </div>
 
@@ -124,8 +133,10 @@
                     <div class="item__body">
                         <span class="item__body_category">Глина для укладки волос</span>
                         <span class="item__body_title">«American Crew»</span>
-                        <span class="item__body_price">500 руб.</span>
-                        <a class="item__body_buy" href="#buy">Купить</a>
+                        <div class="item__body_buys">
+                            <span class="item__body_price">500 руб.</span>
+                            <a class="item__body_buy btn" href="#buy">Купить</a>
+                        </div>
                     </div>
                 </div>
 
@@ -134,8 +145,10 @@
                     <div class="item__body">
                         <span class="item__body_category">Гель для волос</span>
                         <span class="item__body_title">«American Crew»</span>
-                        <span class="item__body_price">300 руб.</span>
-                        <a class="item__body_buy" href="#buy">Купить</a>
+                        <div class="item__body_buys">
+                            <span class="item__body_price">300 руб.</span>
+                            <a class="item__body_buy btn" href="#buy">Купить</a>
+                        </div>
                     </div>
                 </div>
 
@@ -144,17 +157,21 @@
                     <div class="item__body">
                         <span class="item__body_category">Набор для бритья</span>
                         <span class="item__body_title">«Baxter of California»</span>
-                        <span class="item__body_price">3 900 руб.</span>
-                        <a class="item__body_buy" href="#buy">Купить</a>
+                        <div class="item__body_buys">
+                            <span class="item__body_price">2 900 руб.</span>
+                            <a class="item__body_buy btn" href="#buy">Купить</a>
+                        </div>
                     </div>
+                </div>
+                <div class="list">
+                    <a class="btn" href="#1">1</a>
+                    <a class="list_active btn" href="#2">2</a>
+                    <a class="btn" href="#3">3</a>
+                    <a class="btn" href="#4">4</a>
+                </div>
             </section>
         </div>
-        <div class="list">
-            <a href="#1">1</a>
-            <a href="#2">2</a>
-            <a href="#3">3</a>
-            <a href="#4">4</a>
-        </div>
+
     </main>
     <footer class="main-footer">
         <div  class="container">
