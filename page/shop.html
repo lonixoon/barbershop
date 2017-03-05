@@ -15,10 +15,10 @@
                     <ul>
                         <li  class="main-navigation__item_index-page"><a href="../index.html">Главная</a></li>
                         <li><a href="#info">Информация</a></li>
-                        <li><a href="#news">Новости</a></li>
+                        <li><a href="../index.html#news">Новости</a></li>
                         <li><a href="price.html">Прайс-лист</a></li>
                         <li class="active"><a href="#shop">Магазин</a></li>
-                        <li><a href="#container">Контакты</a></li>
+                        <li><a href="../index.html#contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="user-block">
@@ -73,19 +73,16 @@
                     <legend class="product-groups__title">Группы товаров:</legend>
                     <div class="product-groups__body">
                         <div class="radio">
-                            <label for="items-groups">
-                                <input type="radio" name="items-groups" value="shaving-accessories">Бритвенные принадлежности
-                            </label>
+                            <input type="radio" name="items-groups" id="shaving-accessories" value="shaving-accessories">
+                            <label for="shaving-accessories">Бритвенные принадлежности</label>
                         </div>
-                        <div class="radio">  
-                            <label for="items-groups">
-                                <input type="radio" name="items-groups" value="care-products" checked>Средства для ухода
-                            </label>
+                        <div class="radio">
+                            <input type="radio" name="items-groups" id="care-products" value="care-products" checked>
+                            <label for="care-products">Средства для ухода</label>
                          </div>
-                         <div class="radio">   
-                            <label for="items-groups">
-                                <input type="radio" name="items-groups" value="accessories">Аксесуары
-                            </label>
+                         <div class="radio">
+                            <input type="radio" name="items-groups" id="items-groups" value="accessories">
+                            <label for="items-groups">Аксесуары</label>
                         </div>
                     </div>
                 </fieldset>
@@ -93,7 +90,7 @@
             </form>
             <section class="items">
                 <div class="item">
-                    <img src="../img/shop-b-o-c3.jpg">
+                    <a href="baxter-of-california.html"><img src="../img/shop-b-o-c3.jpg"></a>
                     <div class="item__body">
                         <span class="item__body_category">Набор для путешествий</span>
                         <span class="item__body_title">«Baxter of California»</span>
