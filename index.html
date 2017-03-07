@@ -105,7 +105,7 @@
                 <h2 class="item__title">Записаться</h2>
                 <div class="item__body">
                     <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждение брони</p>                        
-                    <form class="appointmant__form" action="#" method="post">
+                    <form class="appointmant__form text-input-box" action="#" method="post">
                         <input type="text" name="data" placeholder="Дата">
                         <input type="text" name="time" placeholder="Время">
                         <input type="text" name="name" placeholder="Ваше имя">
@@ -142,5 +142,21 @@
             </div>
         </div>
     </footer>
+    <div class="modal-user-block">
+        <button class="modal-block-close" type="button">Закрыть</button>
+        <h2 class="modal-user-block__title">Личный кабинет</h2>
+        <p class="modal-user-block__body">Введите пожалуйста свой логин и пароль</p>
+        <form class="modal-user-block__form text-input-box" action="#" method="post">
+            <input type="text" name="login" placeholder="Логин">
+            <input type="password" name="password" placeholder="Пароль">
+            <div class="checkbox flex">
+                <input type="checkbox" name="remember" id="remember">
+                <label  for="remember">Запомнить меня</label>
+                <a class="modal-user-block__form_forgot" href="#">Я забыл пароль!</a>
+            </div>
+            
+            <button type="submit" class="btn" href="#">Войти</button>
+        </form>
+    </div>
 </body>
 </html>
