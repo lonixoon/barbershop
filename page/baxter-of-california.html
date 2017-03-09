@@ -73,14 +73,14 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+<footer class="main-footer">
     <div  class="container">
       <div class="flex">
         <div class="contacts">
           <p>
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="#how-find">Как нас найти?</a><br>
+            <a class="popup_map" href="#how-find">Как нас найти?</a><br>
             Телефон: +7 (495) 666-02-66
           </p>
         </div>
@@ -97,5 +97,27 @@
       </div>
     </div>
   </footer>
+  <div class="modal-user-block">
+    <button class="modal-block-close" type="button">Закрыть</button>
+    <h2 class="modal-user-block__title">Личный кабинет</h2>
+    <p class="modal-user-block__body">Введите пожалуйста свой логин и пароль</p>
+    <form class="modal-user-block__form text-input-box" action="#" method="post">
+      <input type="text" name="login" placeholder="Логин">
+      <input type="password" name="password" placeholder="Пароль">
+      <div class="checkbox flex">
+        <input type="checkbox" name="remember" id="remember">
+        <label  for="remember">Запомнить меня</label>
+        <a class="modal-user-block__form_forgot" href="#">Я забыл пароль!</a>
+      </div>
+      
+      <button type="submit" class="btn">Войти</button>
+    </form>
+  </div>
+  <div class="modal-map">
+    <button class="modal-block-close" type="button">Закрыть</button>
+    <img src="../img/map.jpg" alt="Как нас найти">
+  </div>
+  <div class="modal-overlay"></div>
+  <script src="../js/popup.js"></script>
 </body>
 </html>
