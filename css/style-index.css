@@ -74,8 +74,8 @@
 .radio label::after {  
 	content: "";
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	height: 16px;
 	width: 16px;
 	border-radius: 50%;
@@ -95,7 +95,7 @@
 .radio input[type=radio]:checked + label::before {
 	content: "";
 	position: absolute;
-	top: 0px;
+	top: 0;
 	left: 0;
 	height: 20px;
 	width: 20px;
@@ -637,7 +637,7 @@ input {
 
 	.pictures img:first-child,
 	.pictures img:nth-child(n+2):nth-child(3n+1) {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 .page .article {
